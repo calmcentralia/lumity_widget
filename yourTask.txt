@@ -1,0 +1,23 @@
+Task
+=========================
+
+In the insurance industry a “member” is someone that has purchased insurance with a particular insurance company. You’ve been provided a function inside rxClaims.txt that simulates an AJAX request to load prescription claims data from a plan year for a member that has given us permission to view their claims. The data returned has been aggregated potentially from several sources and might not be unique. Our product team has requested from engineering a widget to visually represent for our users their progress toward reaching insurance related monetary milestones.
+
+Example 1 (deductible.png): Out of pocket expenditure relative to annual health insurance deductible and out of pocket maximum.
+Example 2 (has.png): Year-to-date HSA contribution relative to maximum yearly HSA contribution.
+
+See the included .png files for a visual template of each example.
+
+Your task is two fold:
+
+1. Build a reusable chart component that is flexible enough to dynamically handle both charting cases.
+2. Use the claims function with your chart component to implement the widget shown in deductible.png.
+
+Notes:
+1. deductible.png is only a visual template. 
+2. Assume the annual deductible is $1000 and the out-of-pocket max is $6,350.
+3. Any amount paid toward a claim by a member counts toward the deductible and out-of-pocket maximum.
+4. If the current spend, which is the total amount the member has paid, goes over the deductible, show $0 in the headline.
+5. The widget should not be rendered into the DOM until the data has loaded. Don’t worry about a loader.
+6. Ignore the underlines. Those would show popovers in a complete implementation.
+7. You’d be building visuals like this if you worked at Lumity.
